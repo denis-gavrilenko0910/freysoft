@@ -1,0 +1,48 @@
+.header {
+  padding-top: 26px;
+  background-color: $main-background-color;
+}
+.header__container {
+  display: flex;
+}
+.header__navigation {
+  padding-top: 22px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo__link {
+  display: flex;
+
+  align-items: center;
+  flex-grow: 1;
+}
+.logo__svg {
+  display: flex;
+
+  margin-right: auto;
+  width: 137px;
+  height: 37px;
+}
+.contact-icon__svg {
+  width: 24px;
+  height: 24px;
+  @include container-width_768 {
+    display: none;
+  }
+}
+
+.burger__menu__button {
+  margin-left: 16px;
+  @include container-width_768 {
+    display: none;
+  }
+}
+.header__nav__menu {
+  display: none;
+
+  @include container-width_1440 {
+    display: flex;
+  }
+}
