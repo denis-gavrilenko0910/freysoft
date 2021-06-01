@@ -7,4 +7,14 @@
 
 .about__company {
   line-height: 90%;
+  @include container-width_1440 {
+    width: 320px;
+
+    margin-right: 100px;
+  }
+}
+.list__wraper {
+  @include container-width_1440 {
+    width: 840px;
+  }
 }

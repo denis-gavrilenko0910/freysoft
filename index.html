@@ -25,26 +25,25 @@
             <svg class="logo__svg svg">
               <use href="./img/svg/sprite.svg#freysoft-fullcolor-logo-1"></use>
             </svg>
-            <svg class="contact-icon__svg svg">
-              <use href="./img/svg/sprite.svg#contact"></use>
-            </svg>
           </a>
 
-          <ul class="header__nav__menu ul">
-            <li class="nav__list list">
-              <a class="nav__link link" href="#company">Company</a>
-            </li>
-            <li class="nav__list list">
-              <a class="nav__link link" href="#services">Services </a>
-            </li>
-            <li class="nav__list list">
-              <a class="nav__link link" href="#career">Career</a>
-            </li>
-            <li class="nav__list list">
-              <a class="nav__link link" href="#">Contact Us </a>
-            </li>
-          </ul>
-
+          <div class="header__nav__menu__container">
+            <ul class="header__nav__menu ul">
+              <li class="nav__list list">
+                <a class="nav__link link" href="#company">Company</a>
+              </li>
+              <li class="nav__list list">
+                <a class="nav__link link" href="#services">Services </a>
+              </li>
+              <li class="nav__list list">
+                <a class="nav__link link current" href="#career">Career</a>
+              </li>
+            </ul>
+            <a class="nav__link__contact link" href="#">Contact Us </a>
+          </div>
+          <svg class="contact-icon__svg svg">
+            <use href="./img/svg/sprite.svg#contact"></use>
+          </svg>
           <svg class="burger__menu__button svg" width="24" height="24">
             <use
               class="burger-menu"
@@ -61,13 +60,26 @@
     <main>
       <section class="section section__hero">
         <div class="container">
-          <h2 class="hero__text heading">We’ve got the job for you!</h2>
-          <p class="hero__text__paragraph paragraph">
-            We offer experienced IT specialists to be involved in
-            ground-breaking digital projects and IT novices to develop skills in
-            our perspective workplace.
-          </p>
-
+          <div class="wraper__container">
+            <h2 class="hero__text heading">
+              We’ve got the job for you
+              <span class="exclamation__point">!</span>
+            </h2>
+            <div class="list__wraper">
+              <ul class="ul">
+                <li class="list">
+                  <p class="hero__text__paragraph paragraph">
+                    We offer experienced IT specialists to be involved in
+                    ground-breaking digital projects and IT novices to develop
+                    skills in our perspective workplace.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="background__img__box"></div>
+        <div class="container">
           <a
             class="button see__all__roles__btn"
             aria-label="link to all vacancies"
@@ -80,62 +92,108 @@
       <!-- main content -->
       <section class="section section__about__company">
         <div class="container">
-          <h2 id="about" class="heading about__company">About the company</h2>
-          <ul class="about__company__list ul">
-            <li class="about__company__list list">
-              <p class="paragraph text__about paragraph__text">
-                Founded in 2019, FreySoft is a global provider of full-cycle
-                software development services with headquarters in Kyiv,
-                Ukraine. Our objective is to work on innovative projects that
-                matter and bring value with the most balanced “personal life” /
-                “work” ratio for our team.
-              </p>
-            </li>
-            <li class="about__list list">
-              <p class="paragraph text__about paragraph__text">
-                The key areas of our activity include IT staff augmentation, web
-                and mobile app development, MVP development for startups,
-                integration & automatization, support & maintenance, legacy
-                application transformation, UI/ UX product design, and
-                AI-chatbots development.
-              </p>
-            </li>
-          </ul>
+          <div class="wraper__container">
+            <h2 id="about" class="heading about__company">About the company</h2>
+            <div class="list__wraper">
+              <ul class="about__company__list ul">
+                <li class="about__list list">
+                  <p class="paragraph text__about paragraph__text">
+                    Founded in 2019, FreySoft is a global provider of full-cycle
+                    software development services with headquarters in Kyiv,
+                    Ukraine. Our objective is to work on innovative projects
+                    that matter and bring value with the most balanced “personal
+                    life” / “work” ratio for our team.
+                  </p>
+                </li>
+                <li class="about__list list">
+                  <p class="paragraph text__about paragraph__text">
+                    The key areas of our activity include IT staff augmentation,
+                    web and mobile app development, MVP development for
+                    startups, integration & automatization, support &
+                    maintenance, legacy application transformation, UI/ UX
+                    product design, and AI-chatbots development.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section recruit__process__section">
         <div class="container">
-          <h2 class="heading recruit__process">FreySoft Recruitment process</h2>
-          <ul class="recruit__ul ul">
-            <li class="recruit__list list">
-              <p class="paragraph paragraph__recruit__text paragraph__text">
-                From the start, you will feel the responsive and effective
-                process of recruiting. The main is bureaucracy-free environment
-                inside the company.
-              </p>
-            </li>
-            <li class="recruit__list list">
-              <p class="paragraph paragraph__recruit__text paragraph__text">
-                Identifying the right talent, attracting them, and motivating
-                them to apply is what we strive for in our recruitment process.
-                We have two key phases of hiring the candidate. After, you get
-                either feedback or an offer.
-              </p>
-            </li>
-          </ul>
-          <div class="slider">
-            <span class="stage__element">Stage number 1</span>
-            <h2 class="heading slider__heading">
-              Interview with an HR manager
+          <div class="wraper__container">
+            <h2 class="heading recruit__process">
+              FreySoft Recruitment process
             </h2>
-            <p class="paragraph slider__text">
-              We arrange the phone or video interview at your convenient time.
-              Duration is on average 30-40 minutes. At this phase we are getting
-              to know each other better, determining if the requisite
-              qualifications fill the position and the candidate aligning with
-              an organization’s culture and values.
-            </p>
-            <span class="page__number">1</span>
+            <ul class="recruit__ul ul">
+              <li class="recruit__list list">
+                <p class="paragraph paragraph__recruit__text paragraph__text">
+                  From the start, you will feel the responsive and effective
+                  process of recruiting. The main is bureaucracy-free
+                  environment inside the company.
+                </p>
+              </li>
+              <li class="recruit__list list">
+                <p class="paragraph paragraph__recruit__text paragraph__text">
+                  Identifying the right talent, attracting them, and motivating
+                  them to apply is what we strive for in our recruitment
+                  process. We have two key phases of hiring the candidate.
+                  After, you get either feedback or an offer.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__box">
+            <div class="slider__line">
+              <div class="stage__slider">
+                <span class="stage__element">Stage number 1</span>
+                <h2 class="heading slider__heading">
+                  Interview with an HR manager
+                </h2>
+                <p class="paragraph slider__text">
+                  We arrange the phone or video interview at your convenient
+                  time. Duration is on average 30-40 minutes. At this phase we
+                  are getting to know each other better, determining if the
+                  requisite qualifications fill the position and the candidate
+                  aligning with an organization’s culture and values.
+                </p>
+                <p class="page__number one">1</p>
+              </div>
+              <div class="stage__slider second">
+                <span class="stage__element"
+                  >Stage number 2 <span class="hidden__from__1440px">.1</span>
+                </span>
+                <h2 class="heading slider__heading">
+                  Technical <br />
+                  examination
+                </h2>
+                <ul class="stage__ul ul">
+                  <li class="stage__list list">
+                    <p class="paragraph slider__text">
+                      A tech interview can take about an hour. The date and time
+                      of the meeting will be agreed in advance for your
+                      convenience. This phase is a great opportunity for you to
+                      know about the stack and get acquainted with the lead or
+                      the team you will be working with. You are welcomed to ask
+                      any questions you may have about the skills and
+                      technologies implemented in the project.
+                    </p>
+                  </li>
+                  <li class="stage__list list">
+                    <p class="paragraph slider__text hidden__till__1440px">
+                      If you are considering multiple vacancies for different
+                      projects, we can arrange separate technical interviews
+                      that will focus on the required skills for each individual
+                      project.
+                    </p>
+                  </li>
+                </ul>
+                <p class="page__number two">
+                  2<sup class="hide__superscript">1</sup>
+                </p>
+              </div>
+            </div>
+            <img class="arrows" src="./img/arrows.png" alt="arrows" />
           </div>
         </div>
       </section>
